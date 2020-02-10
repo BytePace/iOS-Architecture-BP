@@ -1,8 +1,11 @@
-# Clean-Architecture-BP
+# Clean Architecture [Bytepace]
 
-###TODO:
+# Ссылки
+[Описание архитектуры](https://github.com/nvelichkin/Clean-Architecture-BP/blob/master/Bytepace%20Architecture.md)
 
-- Add swiftlint rules
-- Add xctemplate
-- Add example
-- Add usable extensions 
+## Планы:
+
+- Добавить swiftling правила
+- Добавить XCode шаблон
+- Добавить пример
+- Добавить расширения над стандартными классами 
