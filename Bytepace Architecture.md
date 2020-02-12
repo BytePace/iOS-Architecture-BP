@@ -14,8 +14,8 @@
     - **Presenter** - используется для биндинга данных ко view. Для работы с View используем протокол. Данный биндинг происходит через протокол ***IsPresenter***, со следующими полями:
         ```
         protocol IsPresenter {
-            struct Input
-            struct Output
+            associatedtype Input
+            associatedtype Output
             func buildOutput(with input: Input) -> Output
         }
         ```
