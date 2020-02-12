@@ -1,0 +1,21 @@
+
+    # Networking
+    pod 'Moya/RxSwift'
+
+    # Database
+    pod 'RealmSwift'
+    pod 'RxRealm'
+
+    # Assets
+    pod 'R.swift'
+
+    # UI
+    pod 'Framezilla'
+
+    # Rx
+    pod 'RxCocoa'
+    pod 'RxSwift'
+    pod 'RxDataSources'
+    
+    # SwiftLint
+    pod 'SwiftLint'
