@@ -9,7 +9,6 @@
 import RxSwift
 import Moya
 
-
 protocol GithubType {
     func searchRepositories(searchText: String) -> Observable<[Repository]>
 }

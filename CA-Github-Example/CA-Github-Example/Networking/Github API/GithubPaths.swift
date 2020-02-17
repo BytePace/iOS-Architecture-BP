@@ -14,28 +14,30 @@ enum GithubPaths {
 
 extension GithubPaths: TargetType {
     var baseURL: URL {
-        return URL(string: "https://api.github.com")!
+        guard let baseURL = URL(string: "https://api.github.com") else { fatalError("Incorrect baseURL") }
+        return baseURL
     }
-    
+
     var path: String {
         switch self {
         case let .repositories(text):
             return "/search/repositories?q=\(text)"
+        }
     }
-    
+
     var method: Moya.Method {
         return .get
     }
-    
+
     var sampleData: Data {
         return Data()
     }
-    
+
     var task: Task {
         return .requestPlain
     }
-    
-    var headers: [String : String]? {
+
+    var headers: [String: String]? {
         return nil
     }
 }
