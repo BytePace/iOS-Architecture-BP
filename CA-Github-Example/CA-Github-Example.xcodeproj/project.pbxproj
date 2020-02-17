@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -58,6 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				06F16BE223FB05830038F553 /* AppDelegate.swift */,
+				06F16BFA23FB0C530038F553 /* Coordinators */,
+				06F16BF823FB0BE30038F553 /* Modules */,
+				06F16BF923FB0BEE0038F553 /* Entities */,
+				06F16BF723FB0BB70038F553 /* Networking */,
 				06F16BF623FB05980038F553 /* Resources */,
 			);
 			path = "CA-Github-Example";
@@ -73,13 +77,40 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		06F16BF723FB0BB70038F553 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		06F16BF823FB0BE30038F553 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		06F16BF923FB0BEE0038F553 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		06F16BFA23FB0C530038F553 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		1F1B9474608EB64D1487A2FF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				D670BE43B8F01010252F34C6 /* Pods-CA-Github-Example.debug.xcconfig */,
 				D10FD14964488C482193F21D /* Pods-CA-Github-Example.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
