@@ -1,0 +1,18 @@
+platform :ios, '11.0'
+use_frameworks!
+
+target 'CA-Github-Example' do
+    # UI
+    pod 'Framezilla'
+
+    # Rx
+    pod 'RxCocoa'
+    pod 'RxSwift'
+    pod 'RxDataSources'
+    
+    # Networking
+    pod 'Moya/RxSwift'
+
+    # SwiftLint
+    pod 'SwiftLint'
+end
