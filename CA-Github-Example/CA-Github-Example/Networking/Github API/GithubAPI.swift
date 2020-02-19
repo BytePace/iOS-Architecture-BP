@@ -17,7 +17,7 @@ class GithubAPI {
 
     private let provider: MoyaProvider<GithubPaths>
     
-    init(provider: MoyaProvider<GithubPaths>) {
+    init(provider: MoyaProvider<GithubPaths> = .init()) {
         self.provider = provider
     }
 }
@@ -28,6 +28,7 @@ extension GithubAPI: GithubType {
             .request(.repositories(searchText: searchText))
             .map(GithubAPIResponse.self)
             .map { $0.items }
+            .catchErrorJustReturn([])
             .asObservable()
     }
 }

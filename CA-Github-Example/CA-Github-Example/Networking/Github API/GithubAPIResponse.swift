@@ -10,4 +10,10 @@ struct GithubAPIResponse: Decodable {
     var count: Int
     var isIncomplete: Bool
     var items: [Repository]
+
+    enum CodingKeys: String, CodingKey {
+        case count = "total_count"
+        case isIncomplete = "incomplete_results"
+        case items
+    }
 }

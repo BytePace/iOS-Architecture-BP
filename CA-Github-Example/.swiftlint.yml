@@ -8,6 +8,10 @@ disabled_rules:
 - trailing_whitespace
 - implicit_return
 - identifier_name
+- file_name
+- conditional_returns_on_newline
+- implicitly_unwrapped_optional
+- trailing_closure
 
 opt_in_rules:
 - array_init

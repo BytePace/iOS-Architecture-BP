@@ -20,8 +20,8 @@ extension GithubPaths: TargetType {
 
     var path: String {
         switch self {
-        case let .repositories(text):
-            return "/search/repositories?q=\(text)"
+        case .repositories:
+            return "/search/repositories"
         }
     }
 
@@ -34,7 +34,10 @@ extension GithubPaths: TargetType {
     }
 
     var task: Task {
-        return .requestPlain
+        switch self {
+        case let .repositories(searchText):
+            return .requestParameters(parameters: ["q": searchText], encoding: URLEncoding())
+        }
     }
 
     var headers: [String: String]? {

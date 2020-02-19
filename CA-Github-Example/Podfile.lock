@@ -14,6 +14,9 @@ PODS:
     - Differentiator (~> 4.0)
     - RxCocoa (~> 5.0)
     - RxSwift (~> 5.0)
+  - RxFlow (2.7.0):
+    - RxCocoa (>= 5.0.0)
+    - RxSwift (>= 5.0.0)
   - RxRelay (5.0.1):
     - RxSwift (~> 5)
   - RxSwift (5.0.1)
@@ -24,6 +27,7 @@ DEPENDENCIES:
   - Moya/RxSwift
   - RxCocoa
   - RxDataSources
+  - RxFlow
   - RxSwift
   - SwiftLint
 
@@ -35,6 +39,7 @@ SPEC REPOS:
     - Moya
     - RxCocoa
     - RxDataSources
+    - RxFlow
     - RxRelay
     - RxSwift
     - SwiftLint
@@ -46,10 +51,11 @@ SPEC CHECKSUMS:
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxFlow: 605ef6364d7e937bea8f9507a1e99a431cdc2493
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
 
-PODFILE CHECKSUM: 010d312c8bc5a19b1da549fa390f4fdedac40786
+PODFILE CHECKSUM: fadf2380f56f784ffb9e127a72c4b90ce6296a6d
 
 COCOAPODS: 1.8.4

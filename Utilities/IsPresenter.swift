@@ -9,5 +9,5 @@ protocol IsPresenter {
     associatedtype Input
     associatedtype Output
     
-    func buildOutput(input: Input) -> Output
+    func buildOutput(with input: Input) -> Output
 }
