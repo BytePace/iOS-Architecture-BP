@@ -16,7 +16,7 @@ protocol IsPresenter {
 }
 
 extension IsPresenter {
-    func buildOutput(input: Input) -> Output {
+    func buildOutput(with input: Input) -> Output {
         bindInput(input)
 
         let output = configureOutput(input)

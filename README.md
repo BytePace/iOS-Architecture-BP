@@ -1,7 +1,9 @@
 # Clean Architecture [Bytepace]
 
 # Ссылки
-[Описание архитектуры](https://github.com/nvelichkin/Clean-Architecture-BP/blob/master/Bytepace%20Architecture.md)
+[Описание архитектуры](https://github.com/bytepace/Clean-Architecture-BP/blob/master/Bytepace%20Architecture.md)
+
+[Пример](https://github.com/bytepace/Clean-Architecture-BP/blob/master/example-project/CA-Github-Example)
 
 ### Добавлние фаз сборки:
     1. Клонируем проект
@@ -14,9 +16,7 @@
     3. Пишем `cp BT\ Clean\ Module.xctemplate ~/Library/Developer/Xcode/Templates`
     4. Теперь при создании нового файла есть выбор нашего шаблона
 
-P.S Добавил в папку Utilities протоколы (IsPresenter, ClassIdentifiable) 
+P.S Добавил в папку Utilities протоколы (IsPresenter, ClassIdentifiable, UIView + Extensions) 
 
-### Планы:
-- Добавить расширения над стандартными классами 
+### Планы: 
 - Добавить расширения над Rx
-- Добавить пример

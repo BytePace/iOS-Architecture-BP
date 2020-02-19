@@ -40,13 +40,13 @@ extension StartFlow {
         let vc = RepositoriesListFabric.assembledScreen()
         navigationController.pushViewController(vc, animated: true)
 
-        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vc.presenter))
+        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vc.stepper))
     }
 
     private func navigateToRepoDetails(repo: Repository) -> FlowContributors {
         let vc = RepositoryDetailsFabric.assembledScreen(repo: repo)
         navigationController.pushViewController(vc, animated: true)
 
-        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vc.presenter))
+        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vc.stepper))
     }
 }

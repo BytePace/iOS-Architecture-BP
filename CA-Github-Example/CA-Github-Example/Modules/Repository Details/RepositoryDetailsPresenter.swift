@@ -34,11 +34,11 @@ extension RepositoryDetailsPresenter: IsPresenter, RepositoryDetailsPresenterPro
         var description: Driver<String?>
     }
 
-    func bindInputs(with input: RepositoryDetailsPresenter.Input) {
+    func bindInput(_ input: RepositoryDetailsPresenter.Input) {
 
     }
 
-    func configureOutputs(with input: RepositoryDetailsPresenter.Input) -> RepositoryDetailsPresenter.Output {
+    func configureOutput(_ input: RepositoryDetailsPresenter.Input) -> RepositoryDetailsPresenter.Output {
         let name = interactor.repository
             .map { $0.name }
             .asDriver(onErrorJustReturn: "")

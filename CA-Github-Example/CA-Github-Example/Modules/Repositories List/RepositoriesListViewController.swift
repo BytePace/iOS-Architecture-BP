@@ -7,14 +7,15 @@
 //
 
 import UIKit
+import RxFlow
 
 final class RepositoriesListViewController: UIViewController {
     private let _view: RepositoriesListView
-    private(set) var presenter: RepositoriesListPresenter
+    private(set) var stepper: Stepper
     
     init(_ presenter: RepositoriesListPresenter) {
         _view = RepositoriesListView(presenter)
-        self.presenter = presenter
+        self.stepper = presenter
         super.init(nibName: nil, bundle: nil)
     }
     
