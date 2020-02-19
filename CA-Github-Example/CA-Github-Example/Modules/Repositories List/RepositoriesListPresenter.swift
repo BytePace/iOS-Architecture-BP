@@ -35,9 +35,8 @@ extension RepositoriesListPresenter: IsPresenter, RepositoriesListPresenterProto
     struct Output {
         var dataSource: Driver<[SectionModel<String, Repository>]>
     }
-    
-    func buildOutput(with input: RepositoriesListPresenter.Input) -> RepositoriesListPresenter.Output {
 
+    func bindInputs(with input: RepositoriesListPresenter.Input) {
         disposeBag.insert(
             input.searchText.subscribe(onNext: { [weak self] text in
                 self?.interactor.fetchRepositories(searchText: text)
@@ -46,7 +45,9 @@ extension RepositoriesListPresenter: IsPresenter, RepositoriesListPresenterProto
                 .map(RouteStep.repoDetails(repo:))
                 .bind(to: steps)
         )
+    }
 
+    func configureOutputs(with input: RepositoriesListPresenter.Input) -> RepositoriesListPresenter.Output {
         let dataSource = interactor.repositories
             .map { [SectionModel(model: "", items: $0)] }
             .asDriver(onErrorJustReturn: [])

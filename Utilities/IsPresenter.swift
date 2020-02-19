@@ -10,4 +10,14 @@ protocol IsPresenter {
     associatedtype Output
     
     func buildOutput(with input: Input) -> Output
+
+    func bindInputs(with input: Input)
+    func configureOutputs(with input: Input) -> Output
+}
+
+extension IsPresenter {
+    func buildOutput(with input: Input) -> Output {
+        bindInputs(with: input)
+        return configureOutputs(with: input)
+    }
 }

@@ -24,16 +24,21 @@ final class RepositoryDetailsPresenter: Stepper {
     }
 }
 
-extension RepositoryDetailsPresenter: RepositoryDetailsPresenterProtocol {
+// MARK: - UI Bindings
+
+extension RepositoryDetailsPresenter: IsPresenter, RepositoryDetailsPresenterProtocol {
     struct Input {}
 
     struct Output {
         var name: Driver<String>
         var description: Driver<String?>
     }
-    
-    func buildOutput(with input: RepositoryDetailsPresenter.Input) -> RepositoryDetailsPresenter.Output {
 
+    func bindInputs(with input: RepositoryDetailsPresenter.Input) {
+
+    }
+
+    func configureOutputs(with input: RepositoryDetailsPresenter.Input) -> RepositoryDetailsPresenter.Output {
         let name = interactor.repository
             .map { $0.name }
             .asDriver(onErrorJustReturn: "")
