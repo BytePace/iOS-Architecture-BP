@@ -15,20 +15,27 @@ protocol ___VARIABLE_moduleName___PresenterProtocol {
 }
 
 final class ___VARIABLE_moduleName___Presenter: Stepper {
-    private let interactor: ___VARIABLE_moduleName___Interactor
-    
     var steps = PublishRelay<Step>()
-    
+
+    private let interactor: ___VARIABLE_moduleName___Interactor
+    private let disposeBag = DisposeBag()
+
     init(_ interactor: ___VARIABLE_moduleName___Interactor) {
         self.interactor = interactor
     }
 }
 
-extension ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___PresenterProtocol {
+extension ___VARIABLE_moduleName___Presenter: IsPresenter, ___VARIABLE_moduleName___PresenterProtocol {
     struct Input {}
+
     struct Output {}
-    
-    func buildOutput(with input: ___VARIABLE_moduleName___Presenter.Input) -> ___VARIABLE_moduleName___Presenter.Output {
+
+    func bindInput(_ input: ___VARIABLE_moduleName___Presenter.Input) {
+
+    }
+
+    func configureOutput(_ input: ___VARIABLE_moduleName___Presenter.Input) -> ___VARIABLE_moduleName___Presenter.Output {
+
         return Output()
     }
 }
