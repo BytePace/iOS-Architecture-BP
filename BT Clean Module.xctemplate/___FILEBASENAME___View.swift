@@ -16,7 +16,7 @@ final class ___VARIABLE_moduleName___View: UIView {
     
     // MARK: - UI Elements
     
-    // MARK: - Init
+    // MARK: - Lifecycle
     
     init(_ presenter: ___VARIABLE_moduleName___PresenterProtocol) {
         self.presenter = presenter
@@ -28,6 +28,11 @@ final class ___VARIABLE_moduleName___View: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        configureSubviews()
     }
 }
 
@@ -45,10 +50,10 @@ extension ___VARIABLE_moduleName___View {
 extension ___VARIABLE_moduleName___View {
     
     private func setupSubviews() {
-        convigureSubviews()
+        addSubviews()
     }
     
-    private func convigureSubviews() {
+    private func configureSubviews() {
         
     }
 }

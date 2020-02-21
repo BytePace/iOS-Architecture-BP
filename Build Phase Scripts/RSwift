@@ -1,0 +1,7 @@
+"$PODS_ROOT/R.swift/rswift" generate "$SRCROOT/R.generated.swift"
+
+Input files:
+$TEMP_DIR/rswift-lastrun
+
+Output files:
+$SRCROOT/R.generated.swift
