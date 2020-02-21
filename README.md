@@ -3,7 +3,7 @@
 # Ссылки
 [Описание архитектуры](https://github.com/BytePace/Clean-Architecture-BP/blob/master/Bytepace%20Architecture.md)
 
-[Пример](https://github.com/bytepace/Clean-Architecture-BP/blob/master/example-project/CA-Github-Example)
+[Пример](https://github.com/BytePace/Clean-Architecture-BP/tree/master/CA-Github-Example)
 
 ### Добавление фаз сборки:
     1. Клонируем проект
