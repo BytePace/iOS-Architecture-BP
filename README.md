@@ -1,7 +1,7 @@
 # Clean Architecture [Bytepace]
 
 # Ссылки
-[Описание архитектуры](https://github.com/nvelichkin/Clean-Architecture-BP/blob/master/Bytepace%20Architecture.md)
+[Описание архитектуры](https://github.com/BytePace/Clean-Architecture-BP/blob/master/Bytepace%20Architecture.md)
 
 ### Установка шаблона:
     1. Клонируем проект
