@@ -1,8 +1,9 @@
 //
 //  IsPresenter.swift
+//  CA-Github-Example
 //
-//  Created by Nikita Velichkin on 11/02/2020.
-//  Copyright © 2020 Velichkin Nikita. All rights reserved.
+//  Created by Nikita Velichkin on 21/02/2020.
+//  Copyright © 2020 Nikita Velichkin. All rights reserved.
 //
 
 protocol IsPresenter {
@@ -23,3 +24,4 @@ extension IsPresenter {
         return output
     }
 }
+

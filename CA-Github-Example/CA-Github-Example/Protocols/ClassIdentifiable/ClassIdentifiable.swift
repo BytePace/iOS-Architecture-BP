@@ -1,8 +1,9 @@
 //
 //  ClassIdentifiable.swift
+//  CA-Github-Example
 //
-//  Created by Nikita Velichkin on 25/01/2020.
-//  Copyright © 2020 Velichkin Nikita. All rights reserved.
+//  Created by Nikita Velichkin on 21/02/2020.
+//  Copyright © 2020 Nikita Velichkin. All rights reserved.
 //
 
 protocol ClassIdentifiable {
@@ -14,3 +15,4 @@ extension ClassIdentifiable {
         return String(describing: self)
     }
 }
+

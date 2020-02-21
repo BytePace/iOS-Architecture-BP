@@ -15,10 +15,6 @@
 		06DAE62D23FD0AF0004DA110 /* RepositoriesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DAE62823FD0AF0004DA110 /* RepositoriesListInteractor.swift */; };
 		06DAE62E23FD0AF0004DA110 /* RepositoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DAE62923FD0AF0004DA110 /* RepositoriesListView.swift */; };
 		06DAE63023FD0BDD004DA110 /* RouteSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DAE62F23FD0BDD004DA110 /* RouteSteps.swift */; };
-		06DAE63323FD0CDC004DA110 /* IsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DAE63223FD0CDC004DA110 /* IsPresenter.swift */; };
-		06DAE63823FD0CE7004DA110 /* UITableView+ClassIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DAE63523FD0CE7004DA110 /* UITableView+ClassIdentifiable.swift */; };
-		06DAE63923FD0CE7004DA110 /* UICollectionView+ClassIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DAE63623FD0CE7004DA110 /* UICollectionView+ClassIdentifiable.swift */; };
-		06DAE63A23FD0CE7004DA110 /* ClassIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DAE63723FD0CE7004DA110 /* ClassIdentifiable.swift */; };
 		06DAE64023FD0DED004DA110 /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DAE63F23FD0DED004DA110 /* UIView + Extensions.swift */; };
 		06DAE64323FD10A4004DA110 /* StartFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DAE64223FD10A4004DA110 /* StartFlow.swift */; };
 		06DAE64623FD14E8004DA110 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DAE64523FD14E8004DA110 /* RepositoryTableViewCell.swift */; };
@@ -27,6 +23,10 @@
 		06DAE64F23FD397B004DA110 /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DAE64A23FD397B004DA110 /* RepositoryDetailsViewController.swift */; };
 		06DAE65023FD397B004DA110 /* RepositoryDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DAE64B23FD397B004DA110 /* RepositoryDetailsInteractor.swift */; };
 		06DAE65123FD397B004DA110 /* RepositoryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DAE64C23FD397B004DA110 /* RepositoryDetailsView.swift */; };
+		06E2B3EA23FFFCAF002E69BB /* IsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2B3E923FFFCAF002E69BB /* IsPresenter.swift */; };
+		06E2B3EE23FFFCF2002E69BB /* ClassIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2B3ED23FFFCF2002E69BB /* ClassIdentifiable.swift */; };
+		06E2B3F023FFFD09002E69BB /* UICollectionView+ClassIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2B3EF23FFFD09002E69BB /* UICollectionView+ClassIdentifiable.swift */; };
+		06E2B3F223FFFD1E002E69BB /* UITableView+ClassIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2B3F123FFFD1E002E69BB /* UITableView+ClassIdentifiable.swift */; };
 		06F16BE323FB05830038F553 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F16BE223FB05830038F553 /* AppDelegate.swift */; };
 		06F16BEC23FB05870038F553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F16BEB23FB05870038F553 /* Assets.xcassets */; };
 		06F16BEF23FB05870038F553 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F16BED23FB05870038F553 /* LaunchScreen.storyboard */; };
@@ -44,10 +44,6 @@
 		06DAE62823FD0AF0004DA110 /* RepositoriesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListInteractor.swift; sourceTree = "<group>"; };
 		06DAE62923FD0AF0004DA110 /* RepositoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListView.swift; sourceTree = "<group>"; };
 		06DAE62F23FD0BDD004DA110 /* RouteSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteSteps.swift; sourceTree = "<group>"; };
-		06DAE63223FD0CDC004DA110 /* IsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IsPresenter.swift; path = ../../../Utilities/IsPresenter.swift; sourceTree = "<group>"; };
-		06DAE63523FD0CE7004DA110 /* UITableView+ClassIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+ClassIdentifiable.swift"; path = "../../../../Utilities/UITableView+ClassIdentifiable.swift"; sourceTree = "<group>"; };
-		06DAE63623FD0CE7004DA110 /* UICollectionView+ClassIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UICollectionView+ClassIdentifiable.swift"; path = "../../../../Utilities/UICollectionView+ClassIdentifiable.swift"; sourceTree = "<group>"; };
-		06DAE63723FD0CE7004DA110 /* ClassIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassIdentifiable.swift; path = ../../../../Utilities/ClassIdentifiable.swift; sourceTree = "<group>"; };
 		06DAE63F23FD0DED004DA110 /* UIView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
 		06DAE64223FD10A4004DA110 /* StartFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartFlow.swift; sourceTree = "<group>"; };
 		06DAE64523FD14E8004DA110 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
@@ -56,6 +52,10 @@
 		06DAE64A23FD397B004DA110 /* RepositoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewController.swift; sourceTree = "<group>"; };
 		06DAE64B23FD397B004DA110 /* RepositoryDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsInteractor.swift; sourceTree = "<group>"; };
 		06DAE64C23FD397B004DA110 /* RepositoryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsView.swift; sourceTree = "<group>"; };
+		06E2B3E923FFFCAF002E69BB /* IsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPresenter.swift; sourceTree = "<group>"; };
+		06E2B3ED23FFFCF2002E69BB /* ClassIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassIdentifiable.swift; sourceTree = "<group>"; };
+		06E2B3EF23FFFD09002E69BB /* UICollectionView+ClassIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ClassIdentifiable.swift"; sourceTree = "<group>"; };
+		06E2B3F123FFFD1E002E69BB /* UITableView+ClassIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ClassIdentifiable.swift"; sourceTree = "<group>"; };
 		06F16BDF23FB05830038F553 /* CA-Github-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CA-Github-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06F16BE223FB05830038F553 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06F16BEB23FB05870038F553 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,20 +96,10 @@
 		06DAE63123FD0CD3004DA110 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				06DAE63423FD0CDE004DA110 /* ClassIdentifiable */,
-				06DAE63223FD0CDC004DA110 /* IsPresenter.swift */,
+				06E2B3EC23FFFCD2002E69BB /* ClassIdentifiable */,
+				06E2B3E923FFFCAF002E69BB /* IsPresenter.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		06DAE63423FD0CDE004DA110 /* ClassIdentifiable */ = {
-			isa = PBXGroup;
-			children = (
-				06DAE63723FD0CE7004DA110 /* ClassIdentifiable.swift */,
-				06DAE63623FD0CE7004DA110 /* UICollectionView+ClassIdentifiable.swift */,
-				06DAE63523FD0CE7004DA110 /* UITableView+ClassIdentifiable.swift */,
-			);
-			path = ClassIdentifiable;
 			sourceTree = "<group>";
 		};
 		06DAE63B23FD0D98004DA110 /* Extensions */ = {
@@ -170,6 +160,16 @@
 				06DAE64C23FD397B004DA110 /* RepositoryDetailsView.swift */,
 			);
 			path = "Repository Details";
+			sourceTree = "<group>";
+		};
+		06E2B3EC23FFFCD2002E69BB /* ClassIdentifiable */ = {
+			isa = PBXGroup;
+			children = (
+				06E2B3ED23FFFCF2002E69BB /* ClassIdentifiable.swift */,
+				06E2B3EF23FFFD09002E69BB /* UICollectionView+ClassIdentifiable.swift */,
+				06E2B3F123FFFD1E002E69BB /* UITableView+ClassIdentifiable.swift */,
+			);
+			path = ClassIdentifiable;
 			sourceTree = "<group>";
 		};
 		06F16BD623FB05830038F553 = {
@@ -409,14 +409,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06E2B3EE23FFFCF2002E69BB /* ClassIdentifiable.swift in Sources */,
+				06E2B3F023FFFD09002E69BB /* UICollectionView+ClassIdentifiable.swift in Sources */,
 				06DAE63023FD0BDD004DA110 /* RouteSteps.swift in Sources */,
 				06DAE62D23FD0AF0004DA110 /* RepositoriesListInteractor.swift in Sources */,
 				06F16C0123FB0D3B0038F553 /* GithubAPI.swift in Sources */,
 				06DAE64D23FD397B004DA110 /* RepositoryDetailsFabric.swift in Sources */,
-				06DAE63923FD0CE7004DA110 /* UICollectionView+ClassIdentifiable.swift in Sources */,
 				06F16C0223FB0D3B0038F553 /* GithubPaths.swift in Sources */,
 				06DAE64E23FD397B004DA110 /* RepositoryDetailsPresenter.swift in Sources */,
 				06DAE64323FD10A4004DA110 /* StartFlow.swift in Sources */,
+				06E2B3F223FFFD1E002E69BB /* UITableView+ClassIdentifiable.swift in Sources */,
+				06E2B3EA23FFFCAF002E69BB /* IsPresenter.swift in Sources */,
 				06DAE62C23FD0AF0004DA110 /* RepositoriesListViewController.swift in Sources */,
 				062FF12B23FB0F8F00456808 /* GithubAPIResponse.swift in Sources */,
 				06DAE62B23FD0AF0004DA110 /* RepositoriesListPresenter.swift in Sources */,
@@ -424,11 +427,8 @@
 				06DAE64023FD0DED004DA110 /* UIView + Extensions.swift in Sources */,
 				06F16BE323FB05830038F553 /* AppDelegate.swift in Sources */,
 				06DAE64F23FD397B004DA110 /* RepositoryDetailsViewController.swift in Sources */,
-				06DAE63A23FD0CE7004DA110 /* ClassIdentifiable.swift in Sources */,
-				06DAE63323FD0CDC004DA110 /* IsPresenter.swift in Sources */,
 				06DAE65023FD397B004DA110 /* RepositoryDetailsInteractor.swift in Sources */,
 				06DAE62A23FD0AF0004DA110 /* RepositoriesListFabric.swift in Sources */,
-				06DAE63823FD0CE7004DA110 /* UITableView+ClassIdentifiable.swift in Sources */,
 				06DAE65123FD397B004DA110 /* RepositoryDetailsView.swift in Sources */,
 				06DAE62E23FD0AF0004DA110 /* RepositoriesListView.swift in Sources */,
 				062FF12923FB0F4A00456808 /* Repository.swift in Sources */,
