@@ -1,11 +1,11 @@
 # Clean Architecture [Bytepace]
 
 # Ссылки
-[Описание архитектуры](https://github.com/bytepace/Clean-Architecture-BP/blob/master/Bytepace%20Architecture.md)
+[Описание архитектуры](https://github.com/BytePace/Clean-Architecture-BP/blob/master/Bytepace%20Architecture.md)
 
 [Пример](https://github.com/bytepace/Clean-Architecture-BP/blob/master/example-project/CA-Github-Example)
 
-### Добавлние фаз сборки:
+### Добавление фаз сборки:
     1. Клонируем проект
     2. Из папки **Build Phase Scripts** открываем скрипты и копируем команду 
     (для R.swift понадобится указать Input Files и Output Files)
