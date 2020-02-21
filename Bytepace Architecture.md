@@ -50,7 +50,8 @@
 3. Interactor общается с сервисами/базой данных
 
 ### Ссылки на объекты:
-1. ViewController имеет ссылку на протокол ***Stepper из presenter***, чтобы делать роутинг через presenter и не иметь доступа к другим объектам presenter'а. Также ViewController имеет ссылку на ***view***, чтобы сделать override loadView
+1. ViewController имеет ссылку на протокол ***Stepper из presenter***, чтобы делать роутинг через presenter и не иметь доступа к другим объектам presenter'а. Также ViewController имеет ссылку на ***view***, чтобы сделать override loadView. 
+Stepper - объект, который эмитит шаги во Flow, т.е производит роутинг между экранами [больше информации](https://github.com/RxSwiftCommunity/RxFlow)
 2. View имеет ссылку на ***presenter protocol***, чтобы обновлять UI, делать роутинг по нажатию на кнопки
 3. Presenter имеет ссылку на ***interactor*** и может общаться с View через ***Protocol***
 4. Interactor имееты ссылки на сервисы и хранит в себе состояние, которое используем в ***presenter***
