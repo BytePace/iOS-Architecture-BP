@@ -8,7 +8,7 @@
 ### Установка шаблона (единоразово):
     1. Клонируем проект
     2. В папке проекта открываем терминал
-    3. Пишем `cp BT\ Clean\ Module.xctemplate ~/Library/Developer/Xcode/Templates`
+    3. Пишем `cp -R BT\ Clean\ Module.xctemplate ~/Library/Developer/Xcode/Templates`
     4. Теперь при создании нового файла есть выбор нашего шаблона
 
 ### Создание проекта:
