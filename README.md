@@ -1,4 +1,4 @@
-# Clean Architecture [Bytepace]
+# iOS Clean Architecture [Bytepace]
 
 # Ссылки
 [Описание архитектуры](https://github.com/BytePace/Clean-Architecture-BP/blob/master/Bytepace%20Architecture.md)
