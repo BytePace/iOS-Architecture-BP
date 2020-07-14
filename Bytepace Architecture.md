@@ -63,7 +63,7 @@ Stepper - объект, который эмитит шаги во Flow, т.е п
 
 ### UI
 
-Для создания UI используется [Framezilla](https://github.com/rosberry/Framezilla). 
+Для создания UI используется [PinLayout](https://github.com/layoutBox/PinLayout). 
 ***Библиотека больше не обновляется, лучше форкнуть и изменять самим***
 ***Отсутствует поддержка сторибордов и .xib файлов***
 
