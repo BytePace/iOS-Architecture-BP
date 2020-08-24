@@ -8,7 +8,7 @@
 
 import UIKit
 import RxSwift
-import Framezilla
+import PinLayout
 
 final class ___VARIABLE_moduleName___View: UIView {
     private let presenter: ___VARIABLE_moduleName___PresenterProtocol
