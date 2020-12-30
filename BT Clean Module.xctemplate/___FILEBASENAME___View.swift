@@ -8,18 +8,15 @@
 
 import UIKit
 import RxSwift
-import PinLayout
 
 final class ___VARIABLE_moduleName___View: UIView {
-    private let presenter: ___VARIABLE_moduleName___PresenterProtocol
     private let disposeBag = DisposeBag()
     
     // MARK: - UI Elements
     
     // MARK: - Lifecycle
     
-    init(_ presenter: ___VARIABLE_moduleName___PresenterProtocol) {
-        self.presenter = presenter
+    init() {
         super.init(frame: .zero)
         
         setupSubviews()
@@ -33,15 +30,6 @@ final class ___VARIABLE_moduleName___View: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         configureSubviews()
-    }
-}
-
-// MARK: - UI Bindings
-
-extension ___VARIABLE_moduleName___View {
-    private func setupBindings() {
-        let input = ___VARIABLE_moduleName___Presenter.Input()
-        let output = presenter.buildOutput(with: input)
     }
 }
 

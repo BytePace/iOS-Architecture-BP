@@ -6,26 +6,28 @@
 //  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-import RxFlow
 import RxCocoa
 import RxSwift
 
-protocol ___VARIABLE_moduleName___PresenterProtocol {
+protocol ___VARIABLE_moduleName___PresenterProtocol: RxPresenter {
+    var router: Router<___VARIABLE_moduleName___ViewController>
     func buildOutput(with input: ___VARIABLE_moduleName___Presenter.Input) -> ___VARIABLE_moduleName___Presenter.Output
 }
 
-final class ___VARIABLE_moduleName___Presenter: Stepper {
-    var steps = PublishRelay<Step>()
-
+final class ___VARIABLE_moduleName___Presenter: Presenter {
+    
+    private var router: Router<SearchViewController>
     private let interactor: ___VARIABLE_moduleName___Interactor
+    
     private let disposeBag = DisposeBag()
 
-    init(_ interactor: ___VARIABLE_moduleName___Interactor) {
+    init(_ router: Router<___VARIABLE_moduleName___ViewController>, _ interactor: ___VARIABLE_moduleName___Interactor) {
+        self.router = router
         self.interactor = interactor
     }
 }
 
-extension ___VARIABLE_moduleName___Presenter: IsPresenter, ___VARIABLE_moduleName___PresenterProtocol {
+extension ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___PresenterProtocol {
     struct Input {}
 
     struct Output {}

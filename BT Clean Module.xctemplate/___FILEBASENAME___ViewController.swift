@@ -7,16 +7,21 @@
 //
 
 import UIKit
-import RxFlow
 
 final class ___VARIABLE_moduleName___ViewController: UIViewController {
     private let _view: ___VARIABLE_moduleName___View
-    private(set) var stepper: Stepper
     
     init(_ presenter: ___VARIABLE_moduleName___Presenter) {
-        _view = ___VARIABLE_moduleName___View(presenter)
-        self.stepper = presenter
+        _view = ___VARIABLE_moduleName___View()
+        self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init(_ presenter: SearchPresenter) {
+        self.presenter = presenter
+        super.init(nibName: nil, bundle: nil)
+        
+        configureDatasources()
     }
     
     required init?(coder: NSCoder) {
@@ -25,5 +30,15 @@ final class ___VARIABLE_moduleName___ViewController: UIViewController {
     
     override func loadView() {
         view = _view
+    }
+}
+
+
+// MARK: - UI Bindings
+
+extension ___VARIABLE_moduleName___ViewController {
+    private func setupBindings() {
+        let input = ___VARIABLE_moduleName___Presenter.Input()
+        let output = presenter.buildOutput(with: input)
     }
 }
