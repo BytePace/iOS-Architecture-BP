@@ -10,18 +10,13 @@ import UIKit
 
 final class ___VARIABLE_moduleName___ViewController: UIViewController {
     private let _view: ___VARIABLE_moduleName___View
+    private var presenter: ___VARIABLE_moduleName___Presenter
     
     init(_ presenter: ___VARIABLE_moduleName___Presenter) {
         _view = ___VARIABLE_moduleName___View()
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init(_ presenter: SearchPresenter) {
-        self.presenter = presenter
-        super.init(nibName: nil, bundle: nil)
-        
-        configureDatasources()
+        setupBindings()
     }
     
     required init?(coder: NSCoder) {

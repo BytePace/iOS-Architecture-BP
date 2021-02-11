@@ -10,13 +10,13 @@ import RxCocoa
 import RxSwift
 
 protocol ___VARIABLE_moduleName___PresenterProtocol: RxPresenter {
-    var router: Router<___VARIABLE_moduleName___ViewController>
+    var router: Router<___VARIABLE_moduleName___ViewController> { get }
     func buildOutput(with input: ___VARIABLE_moduleName___Presenter.Input) -> ___VARIABLE_moduleName___Presenter.Output
 }
 
-final class ___VARIABLE_moduleName___Presenter: Presenter {
+final class ___VARIABLE_moduleName___Presenter {
     
-    private var router: Router<SearchViewController>
+    var router: Router<___VARIABLE_moduleName___ViewController>
     private let interactor: ___VARIABLE_moduleName___Interactor
     
     private let disposeBag = DisposeBag()

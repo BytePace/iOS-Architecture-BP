@@ -20,7 +20,6 @@ final class ___VARIABLE_moduleName___View: UIView {
         super.init(frame: .zero)
         
         setupSubviews()
-        setupBindings()
     }
     
     required init?(coder: NSCoder) {
