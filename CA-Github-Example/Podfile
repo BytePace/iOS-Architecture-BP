@@ -3,8 +3,8 @@ use_frameworks!
 
 target 'CA-Github-Example' do
     # UI
-    pod 'Framezilla', git: 'https://github.com/rosberry/Framezilla'
-
+    pod 'PinLayout'
+    
     # Routing
     pod 'RxFlow'
 

@@ -9,7 +9,6 @@
 import UIKit
 import RxSwift
 import RxDataSources
-import Framezilla
 
 final class RepositoriesListView: UIView {
     typealias RepoSection = SectionModel<String, Repository>
@@ -82,6 +81,13 @@ extension RepositoriesListView {
 
 // MARK: - Private Methods
 
+import PinLayout
+
+private extension CGFloat {
+    static let hSpacing: CGFloat = 12
+    static let topSpacing: CGFloat = 20
+    static let bottomSpacing: CGFloat = 8
+}
 extension RepositoriesListView {
 
     private func setupDataSource() {
@@ -93,17 +99,15 @@ extension RepositoriesListView {
     }
     
     private func configureSubviews() {
-        searchBar.configureFrame {
-            $0.top(to: nui_safeArea)
-            $0.left().right()
-            $0.bottom(to: tableView.nui_top, inset: 20)
-        }
-
-        tableView.configureFrame {
-            $0.top(to: searchBar.nui_bottom, inset: 20)
-            $0.left(inset: 12).right(inset: 12)
-            $0.bottom(to: nui_safeArea, inset: 8)
-        }
+        searchBar.pin
+            .top(pin.safeArea.top)
+            .horizontally()
+        
+        tableView.pin
+            .below(of: searchBar)
+            .marginTop(.topSpacing)
+            .horizontally(.hSpacing)
+            .bottom(pin.safeArea.bottom + .bottomSpacing)
     }
 }
 

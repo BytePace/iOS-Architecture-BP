@@ -8,7 +8,6 @@
 
 import UIKit
 import RxSwift
-import Framezilla
 
 final class RepositoryDetailsView: UIView {
     private let presenter: RepositoryDetailsPresenterProtocol
@@ -68,8 +67,12 @@ extension RepositoryDetailsView {
     }
 }
 
-// MARK: - Private Methods
+private extension CGFloat {
+    static let minSpacing: CGFloat = 15
+    static let maxSpacing: CGFloat = 25
 
+}
+// MARK: - Private Methods
 extension RepositoryDetailsView {
     
     private func setupSubviews() {
@@ -77,16 +80,15 @@ extension RepositoryDetailsView {
     }
     
     private func configureSubviews() {
-        titleLabel.configureFrame {
-            $0.top(to: nui_safeArea, inset: 25)
-            $0.left(inset: 15).right(inset: 15)
-            $0.bottom(to: descriptionLabel.nui_top, inset: 25)
-        }
-
-        descriptionLabel.configureFrame {
-            $0.top(to: titleLabel.nui_bottom, inset: 25)
-            $0.left(inset: 15).right(inset: 15)
-            $0.heightToFit()
-        }
+        titleLabel.pin
+            .top(pin.safeArea.top + .minSpacing)
+            .horizontally(.minSpacing)
+            .sizeToFit(.width)
+        
+        descriptionLabel.pin
+            .below(of: titleLabel)
+            .marginTop(.maxSpacing)
+            .horizontally(.minSpacing)
+            .sizeToFit(.width)
     }
 }

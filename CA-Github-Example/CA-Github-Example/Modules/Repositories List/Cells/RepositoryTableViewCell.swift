@@ -51,8 +51,7 @@ extension RepositoryTableViewCell {
     }
 
     private func configureSubviews() {
-        titleLabel.configureFrame {
-            $0.left().right().top().bottom()
-        }
+        titleLabel.pin
+            .all()
     }
 }
