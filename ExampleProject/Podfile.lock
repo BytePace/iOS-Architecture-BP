@@ -1,0 +1,84 @@
+PODS:
+  - Alamofire (5.4.1)
+  - BytepaceSwiftUtils (0.1.5):
+    - PinLayout
+    - RxCocoa
+    - RxSwift
+  - Differentiator (4.0.1)
+  - Kingfisher (6.0.1)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - PinLayout (1.9.3)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - RxSwiftExt (5.2.0):
+    - RxSwiftExt/Core (= 5.2.0)
+    - RxSwiftExt/RxCocoa (= 5.2.0)
+  - RxSwiftExt/Core (5.2.0):
+    - RxSwift (~> 5.0)
+  - RxSwiftExt/RxCocoa (5.2.0):
+    - RxCocoa (~> 5.0)
+    - RxSwiftExt/Core
+  - RxSwiftUtilities (2.2.0):
+    - RxCocoa (~> 5.1)
+    - RxSwift (~> 5.1)
+  - SwiftLint (0.42.0)
+
+DEPENDENCIES:
+  - BytepaceSwiftUtils (~> 0.1.5)
+  - Kingfisher
+  - Moya/RxSwift
+  - PinLayout
+  - RxCocoa
+  - RxDataSources
+  - RxSwift
+  - RxSwiftExt
+  - RxSwiftUtilities
+  - SwiftLint
+
+SPEC REPOS:
+  "git@gitlab.com:bytepace/BytepaceSwiftUtilsSpecs.git":
+    - BytepaceSwiftUtils
+  trunk:
+    - Alamofire
+    - Differentiator
+    - Kingfisher
+    - Moya
+    - PinLayout
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - RxSwiftExt
+    - RxSwiftUtilities
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  BytepaceSwiftUtils: 7e2f0ea5b277d97715c202a17a97349c282c4420
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  Kingfisher: adde87a4f74f6a3845395769354efff593581740
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  PinLayout: 4d8733121f8687edcc8f00c19bf1379d12808767
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  RxSwiftExt: 4ca80336f43c28f11a2825cdd2fc61dd6c044697
+  RxSwiftUtilities: 59e2d82daf74b9962f732b09e6da85a26281cfc0
+  SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
+
+PODFILE CHECKSUM: f34f4f91123cdbe041b08c19f5b7413219da4eca
+
+COCOAPODS: 1.11.2

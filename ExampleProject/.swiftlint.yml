@@ -1,0 +1,199 @@
+excluded:
+
+    - Pods
+
+    - R.generated.swift
+
+
+
+# Instead of comment rules copy it to disabled_rules block
+
+disabled_rules:
+
+- discouraged_optional_collection
+
+- trailing_whitespace
+
+- implicit_return
+
+- identifier_name
+
+- trailing_closure
+
+
+
+opt_in_rules:
+
+- array_init
+
+- closure_end_indentation
+
+- closure_parameter_position
+
+- closure_spacing
+
+- comma
+
+- conditional_returns_on_newline
+
+- contains_over_first_not_nil
+
+- contains_over_range_nil_comparison
+
+- discouraged_optional_boolean
+
+- discouraged_optional_collection
+
+- duplicate_enum_cases
+
+- duplicate_imports
+
+- dynamic_inline
+
+- empty_count
+
+- empty_enum_arguments
+
+- empty_string
+
+- enum_case_associated_values_count
+
+- explicit_init
+
+- extension_access_modifier
+
+- fallthrough
+
+- fatal_error_message
+
+- file_name
+
+- first_where
+
+- force_unwrapping
+
+- function_default_parameter_at_end
+
+- identical_operands
+
+- implicit_getter
+
+- implicit_return
+
+- implicitly_unwrapped_optional
+
+- joined_default_parameter
+
+- last_where
+
+- literal_expression_end_indentation
+
+- mark
+
+- modifier_order # [override, acl, setterACL, dynamic, mutators, lazy, final, required, convenience, typeMethods, owned]
+
+- multiline_arguments
+
+- multiline_function_chains
+
+- multiline_parameters
+
+- no_space_in_method_call
+
+- number_separator
+
+- operator_usage_whitespace
+
+- optional_enum_case_matching # Supports Swift 5.1.0 and above
+
+- overridden_super_call
+
+- override_in_extension
+
+- pattern_matching_keywords
+
+- prohibited_interface_builder
+
+- protocol_property_accessors_order
+
+- reduce_into
+
+- redundant_nil_coalescing
+
+- redundant_optional_initialization
+
+- redundant_set_access_control
+
+- redundant_string_enum_value
+
+- shorthand_operator
+
+- sorted_first_last
+
+- switch_case_on_newline
+
+- syntactic_sugar
+
+- todo
+
+- toggle_bool
+
+- trailing_comma
+
+- trailing_semicolon
+
+- unneeded_break_in_switch
+
+- unneeded_parentheses_in_closure_argument
+
+- unused_capture_list
+
+- unused_closure_parameter
+
+- unused_optional_binding
+
+- unused_setter_value
+
+- vertical_parameter_alignment_on_call
+
+- yoda_condition
+
+
+
+attributes:
+
+  always_on_same_line: ["@objc"]
+
+
+
+line_length:
+
+  warning: 160
+
+  ignores_function_declarations: true
+
+  ignores_comments: true
+
+
+
+type_body_length:
+
+    warning: 400
+
+    error: 500
+
+
+
+file_length:
+
+    warning: 400
+
+    error: 500
+
+
+
+function_parameter_count: 6
+
+
+
+warning_threshold: 10

@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+source 'git@gitlab.com:bytepace/BytepaceSwiftUtilsSpecs.git'
+
+target 'TestGithubProject' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Utils
+  
+  pod 'BytepaceSwiftUtils'
+  
+  # Networking
+  pod 'Moya/RxSwift'
+
+  # UI
+  pod 'PinLayout'
+  pod 'Kingfisher'
+
+  # Rx
+  pod 'RxCocoa'
+  pod 'RxSwift'
+  pod 'RxDataSources'
+  pod 'RxSwiftUtilities'
+  pod 'RxSwiftExt'
+
+  # SwiftLint
+  pod 'SwiftLint'
+end
