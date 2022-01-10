@@ -4,14 +4,14 @@
 
 - Каждый модуль имеет следующие файлы:
 
-    - **Fabric** - используется для создания модуля, сюда прокидываются данные, которые мы будем передавать на следующий экран. Используется во Flow, чтобы создать экран и использовать его для роутинга
+    - **Factory** - используется для создания модуля, сюда прокидываются данные, которые мы будем передавать на следующий экран.
         ```
         Например, при переходе на экран профиля, передаем id в этот слой, как параметр
         ```
         ```
-        let vc = ExampleFabric.assembledScreen(id: id)
-        navigationController.pushViewController(vc, animated: true)
-        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vc.stepper))
+        let router = ExampleDetailsRouter()
+        let viewController = ExampleDetailsFactory.assembledScreen(router)
+        openWithNextRouter(viewController, nextRouter: router, transition: openExampleDetailsTransition)
         ```
         
         - **Interactor** - используется для работы с сервисами, вся логика с загрузкой, обновлением данных происходит через данный слой. 
@@ -39,7 +39,7 @@
     
     - **ViewController** - используется для хранения view
     
-    - **Router** - слой, для навигации по приложению, для навигации используется [RxFlow](https://github.com/RxSwiftCommunity/RxFlow). О навигации знает ***презентер этого модуля***
+    - **Router** - слой, для навигации по приложению. О навигации знает ***презентер этого модуля***
 ---
 ### Структура
 
@@ -50,11 +50,10 @@
 3. Interactor общается с сервисами/базой данных
 
 ### Ссылки на объекты:
-1. ViewController имеет ссылку на протокол ***Stepper из presenter***, чтобы делать роутинг через presenter и не иметь доступа к другим объектам presenter'а. Также ViewController имеет ссылку на ***view***, чтобы сделать override loadView. 
-Stepper - объект, который эмитит шаги во Flow, т.е производит роутинг между экранами [больше информации](https://github.com/RxSwiftCommunity/RxFlow)
-2. View имеет ссылку на ***presenter protocol***, чтобы обновлять UI, делать роутинг по нажатию на кнопки
+1. ViewController имеет ссылку на протокол ***Router из presenter***, чтобы делать роутинг через presenter и не иметь доступа к другим объектам presenter'а. Также ViewController имеет ссылку на ***view***, чтобы сделать override loadView.
+2. View имеет ссылку на ***Presenter protocol***, чтобы обновлять UI, делать роутинг по нажатию на кнопки
 3. Presenter имеет ссылку на ***interactor*** и может общаться с View через ***Protocol***
-4. Interactor имееты ссылки на сервисы и хранит в себе состояние, которое используем в ***presenter***
+4. Interactor имееты ссылки на сервисы и хранит в себе состояние, которое используем в ***Presenter***
 
 ---
 
@@ -70,13 +69,3 @@ Stepper - объект, который эмитит шаги во Flow, т.е п
 
 Для работы с ассетами используется [R.swift](https://github.com/mac-cain13/R.swift)
 При работе с цветами из ассетов, стоит написать wrapper, т.к возвращаются UIColor типа optional
-
-
-### Networking
-
-Для работы с сетевым слоем используется [Moya](https://github.com/Moya/Moya)
-
-
-### Database
-
-Для работы со слоем хранения используется [Realm](https://realm.io/docs/swift/latest)
