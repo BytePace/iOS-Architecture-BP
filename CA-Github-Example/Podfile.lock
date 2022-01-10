@@ -32,18 +32,17 @@ DEPENDENCIES:
   - SwiftLint
 
 SPEC REPOS:
-  https://cdn.cocoapods.org/:
+  trunk:
     - Alamofire
     - Differentiator
     - Moya
     - PinLayout
+    - RxCocoa
     - RxDataSources
     - RxFlow
     - RxRelay
-    - SwiftLint
-  https://github.com/CocoaPods/Specs.git:
-    - RxCocoa
     - RxSwift
+    - SwiftLint
 
 SPEC CHECKSUMS:
   Alamofire: 58ff2bfb8daaacaa233d5c36e37b10a5248f59b1
