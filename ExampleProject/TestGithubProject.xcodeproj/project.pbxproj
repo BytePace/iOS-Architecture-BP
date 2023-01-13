@@ -29,7 +29,6 @@
 		EF8396F2260DDBB700EB4474 /* RepositoriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8396EC260DDBB700EB4474 /* RepositoriesListViewController.swift */; };
 		EF8396F3260DDBB700EB4474 /* RepositoriesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8396ED260DDBB700EB4474 /* RepositoriesListInteractor.swift */; };
 		EF8396F4260DDBB700EB4474 /* RepositoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8396EE260DDBB700EB4474 /* RepositoriesListView.swift */; };
-		EF8396F8260DDBE600EB4474 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8396F7260DDBE600EB4474 /* UIView+Extensions.swift */; };
 		EF839711260DDC7500EB4474 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF839710260DDC7500EB4474 /* BaseView.swift */; };
 		EF839715260DDD3300EB4474 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF839714260DDD3300EB4474 /* BaseViewController.swift */; };
 		EF839719260DDF0600EB4474 /* GithubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF839718260DDF0600EB4474 /* GithubRepository.swift */; };
@@ -67,7 +66,6 @@
 		EF8396EC260DDBB700EB4474 /* RepositoriesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListViewController.swift; sourceTree = "<group>"; };
 		EF8396ED260DDBB700EB4474 /* RepositoriesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListInteractor.swift; sourceTree = "<group>"; };
 		EF8396EE260DDBB700EB4474 /* RepositoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListView.swift; sourceTree = "<group>"; };
-		EF8396F7260DDBE600EB4474 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		EF839710260DDC7500EB4474 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		EF839714260DDD3300EB4474 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EF839718260DDF0600EB4474 /* GithubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepository.swift; sourceTree = "<group>"; };
@@ -198,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				EF8396FB260DDC5200EB4474 /* BaseClasses */,
-				EF8396F7260DDBE600EB4474 /* UIView+Extensions.swift */,
 				EF839721260DEF1B00EB4474 /* UITableView+Identifiable.swift */,
 				EF283E522611915E00013E61 /* String+Localized.swift */,
 				EF283E66261192FA00013E61 /* UIImageView+Kingfisher.swift */,
@@ -382,7 +379,6 @@
 				EF8396F3260DDBB700EB4474 /* RepositoriesListInteractor.swift in Sources */,
 				EF8396F4260DDBB700EB4474 /* RepositoriesListView.swift in Sources */,
 				EF3F16DD260DDA4E00A811CC /* NetworkService.swift in Sources */,
-				EF8396F8260DDBE600EB4474 /* UIView+Extensions.swift in Sources */,
 				EF283E67261192FA00013E61 /* UIImageView+Kingfisher.swift in Sources */,
 				EF8396F1260DDBB700EB4474 /* RepositoriesListRouter.swift in Sources */,
 				EF8396F0260DDBB700EB4474 /* RepositoriesListPresenter.swift in Sources */,

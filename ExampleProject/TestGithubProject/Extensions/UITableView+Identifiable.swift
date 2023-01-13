@@ -1,6 +1,7 @@
 //
 //  UITableView+Identifiable.swift
 //  TestGithubProject
+
 import UIKit
 
 protocol ClassIdentifiable: class {

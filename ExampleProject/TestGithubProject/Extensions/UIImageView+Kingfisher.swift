@@ -1,9 +1,3 @@
-//
-//  UIImageView+Kingfisher.swift
-//  TestGithubProject
-//
-
-
 import Foundation
 import Kingfisher
 import UIKit

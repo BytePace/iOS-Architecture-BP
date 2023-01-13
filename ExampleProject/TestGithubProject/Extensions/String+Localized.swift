@@ -1,9 +1,3 @@
-//
-//  String+Localized.swift
-//  TestGithubProject
-//
-
-
 import Foundation
 
 extension String {

@@ -1,6 +1,3 @@
-//
-//  RepositoryTableViewCell.swift
-//  TestGithubProject
 import UIKit
 
 private extension CGFloat {
@@ -17,39 +14,29 @@ class RepositoryTableViewCell: UITableViewCell, ClassIdentifiable {
     
     private let descriptionLabel: UILabel = {
         let label = UILabel()
-        
         label.numberOfLines = 0
-        
         label.font = .preferredFont(forTextStyle: .footnote)
-        
         return label
     }()
     
     private let repoNameLabel: UILabel = {
         let label = UILabel()
-        
         label.font = .preferredFont(forTextStyle: .body)
-        
         return label
     }()
     
     private let avatarImage: UIImageView = {
         let imageView = UIImageView()
         imageView.image = nil
-        
         imageView.backgroundColor = .gray
-        
         imageView.layer.masksToBounds = true
         imageView.layer.cornerRadius = .avatarSize / 2.0
-        
         return imageView
     }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
         selectionStyle = .none
-        
         setupSubviews()
     }
     
@@ -60,7 +47,7 @@ class RepositoryTableViewCell: UITableViewCell, ClassIdentifiable {
     private func setupSubviews() {
         addSubviews(descriptionLabel, repoNameLabel, avatarImage)
     }
-    
+
     override func layoutSubviews() {
         super.layoutSubviews()
         configureSubviews()
