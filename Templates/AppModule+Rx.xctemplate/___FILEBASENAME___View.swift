@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import RxSwift
 
 final class ___VARIABLE_moduleName___View: UIView {
+    private let disposeBag = DisposeBag()
+    
     // MARK: - UI Elements
     
     // MARK: - Lifecycle
@@ -34,10 +37,10 @@ final class ___VARIABLE_moduleName___View: UIView {
 extension ___VARIABLE_moduleName___View {
     
     private func setupSubviews() {
-
+        addSubviews()
     }
     
     private func configureSubviews() {
-
+        
     }
 }

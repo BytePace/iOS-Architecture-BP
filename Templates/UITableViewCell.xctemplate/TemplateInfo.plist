@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>BytePace View</string>
+	<string>BytePace UITableViewCell</string>
 	<key>Description</key>
-	<string>This generates a new view</string>
+	<string>This generates a new UITableViewCell</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
@@ -40,6 +40,6 @@
 	<key>SortOrder</key>
 	<string>1</string>
 	<key>Summary</key>
-	<string>This generates a new Module</string>
+	<string>This generates a new UITableViewCell</string>
 </dict>
 </plist>

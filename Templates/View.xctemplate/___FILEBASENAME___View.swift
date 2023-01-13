@@ -7,11 +7,8 @@
 //
 
 import UIKit
-import RxSwift
 
 final class ___VARIABLE_moduleName___View: UIView {
-    private let disposeBag = DisposeBag()
-    
     // MARK: - UI Elements
     
     // MARK: - Lifecycle

@@ -6,14 +6,13 @@
 //  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-final class ___VARIABLE_moduleName___Router: Router<___VARIABLE_moduleName___ViewController>, ___VARIABLE_moduleName___Router.Routes {
+import XCTest
 
-    typealias Routes = Any
-}
-
-protocol ___VARIABLE_moduleName___Route {
-    var open___VARIABLE_moduleName___Transition: Transition { get }
-    func open___VARIABLE_moduleName___()
+class ___VARIABLE_moduleName___Tests: XCTestCase {    
+    private func makeSUT() -> ___VARIABLE_moduleName___ {
+        let sut = ___VARIABLE_moduleName___()
+        return sut
+    }
 }
 extension ___VARIABLE_moduleName___Route where Self: RouterProtocol {
     func open___VARIABLE_moduleName___() {

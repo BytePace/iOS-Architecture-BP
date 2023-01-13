@@ -18,7 +18,7 @@ protocol ___VARIABLE_moduleName___Route {
 extension ___VARIABLE_moduleName___Route where Self: RouterProtocol {
     func open___VARIABLE_moduleName___() {
         let router = ___VARIABLE_moduleName___Router()
-        let viewController = ___VARIABLE_moduleName___Factory.assembledScreen(router)
+        let viewController = ___VARIABLE_moduleName___Fabric.assembledScreen(router)
         openWithNextRouter(viewController, nextRouter: router, transition: open___VARIABLE_moduleName___Transition)
     }
 }
