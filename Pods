@@ -6,6 +6,9 @@
     pod 'RealmSwift'
     pod 'RxRealm'
 
+    # Navigation
+    pod 'RxFlow' 
+
     # Assets
     pod 'R.swift'
 
