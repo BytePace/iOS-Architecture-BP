@@ -1,4 +1,4 @@
-typealias Routes = Any
+typealias ___VARIABLE_moduleName___Routes = Any
 
 final class ___VARIABLE_moduleName___Router: Router<___VARIABLE_moduleName___ViewController>, ___VARIABLE_moduleName___Routes {
 
